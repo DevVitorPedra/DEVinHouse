@@ -79,53 +79,31 @@ const deleteItem = (ele) => {
   console.log(del);
   ele.parentElement.remove();
 };
+const deleteFromStorage = (ele) => {
+     let listPosition = ele.previousSibling.innerHTML
+    localStorage.removeItem(listPosition)
+}
 const fromStorage = () => {
   for (let i = 1; i <= localStorage.length; i++) {
     let newItem = document.createElement("div");
     let newItemName = document.createTextNode(`lista ${i}`);
     let itemDelete = document.createElement('button')
+    itemDelete.setAttribute('onclick', 'deleteFromStorage(this)')
+
     itemDelete.innerHTML ='<i class="bi bi-trash"></i>'
+    itemDelete.classList.add('delete-storage')
     newItem.appendChild(newItemName);
     newItem.setAttribute('onclick','testingSideList(this)')
     newItem.classList.add("card");
-   
+    
     
     sideList.appendChild(newItem);
+  sideList.appendChild(itemDelete)
+
   }
 };
 fromStorage();
-const sideBarList = (ele) => {
-  console.log(ele)
-  adicionados.innerHTML = "";
-  let arrayItem = JSON.parse(localStorage.getItem(ele.innerHTML))
-  for(let i = 0; i<arrayItem.length; i++){
-    let itemDiv = document.createElement("div");
-    let itemCheckbox = document.createElement("input");
-    itemCheckbox.classList.add("checkboxes");
-    itemCheckbox.setAttribute("type", "checkbox");
-    itemCheckbox.checked = arrayItem[i].check
-    itemCheckbox.setAttribute("name",arrayItem[i].name);
-    itemCheckbox.setAttribute("id", arrayItem[i].name+id);
-    let itemLi = document.createElement("label");
-    itemLi.classList.add("line-through");
-    itemLi.setAttribute("for", arrayItem[i].name+id);
-    let itemLiNode = document.createTextNode(arrayItem[i].name);
-    itemLi.appendChild(itemLiNode);
-    let itemSpan = document.createElement("span");
-    itemSpan.innerHTML = '<i class="bi bi-trash"></i>';
-    itemSpan.classList.add("delete");
-    itemSpan.setAttribute("onclick", "deleteItem(this)");
-    itemDiv.appendChild(itemCheckbox);
-    itemDiv.appendChild(itemLi);
-    itemDiv.appendChild(itemSpan);
-    itemDiv.setAttribute("name", arrayItem[i].name);
-  
-    adicionados.appendChild(itemDiv);
-  }
-  
 
-  
-};
 
 const testingSideList = (ele) => {
   

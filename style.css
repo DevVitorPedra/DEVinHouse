@@ -137,3 +137,8 @@ span{
 #adicionados{
   padding: 20px;
 }
+.delete-storage{
+  float: right;
+  margin-top: -50px;
+  margin-right: 10px;
+}
