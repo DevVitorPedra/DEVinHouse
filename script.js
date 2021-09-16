@@ -82,11 +82,21 @@ const deleteItem = (ele) => {
 const deleteFromStorage = (ele) => {
      let listPosition = ele.previousSibling.innerHTML
     localStorage.removeItem(listPosition)
+    sideList.innerHTML = ''
+    fromStorage()
 }
 const fromStorage = () => {
-  for (let i = 1; i <= localStorage.length; i++) {
+  let storageKeys =[]
+  for(let j = 0; j<localStorage.length; j++){
+    storageKeys.push(localStorage.key(j))
+
+  }
+  storageKeys.sort()
+  
+  for (let i = 0; i < localStorage.length; i++) {
+  let key = storageKeys[i]
     let newItem = document.createElement("div");
-    let newItemName = document.createTextNode(`lista ${i}`);
+    let newItemName = document.createTextNode(key);
     let itemDelete = document.createElement('button')
     itemDelete.setAttribute('onclick', 'deleteFromStorage(this)')
 
