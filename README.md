@@ -64,8 +64,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 
 
-## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo]DEV To-Do List<br>
+
+
+
