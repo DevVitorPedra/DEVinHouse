@@ -15,12 +15,12 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Deletar itens
 - [x] Salvar listas
 - [x] Deletar listas
-- [ ] Dar um nome as listas
+- [ ] Dar nome a lista
 - [ ] Substituir uma lista existente
 
 ## 💻 Pré-requisitos
 
- - Não a pre-requisitos para utilização do sistema
+ - Não há pre-requisitos para utilização do sistema
 
 
 
@@ -32,11 +32,11 @@ Para usar DEV To-Do List, siga estas etapas:
 Na caixa de texto voce deve inserir a atividade a ser realizada, podendo ser uma palavra ou uma descrição breve
 Ao clicar em inserir ela vai automáticamente para a lista com um botão para deletar e um uma pequena caixa para marcar se já foi realizada
 As tarefas realizadas ficam com um simbolo azul e a descrição riscada
-para deletar uma atividade basta clicar na lixeira ao lado do item a ser deletado
+Para deletar uma atividade basta clicar na lixeira ao lado do item a ser deletado
 Após inserir todas as atividades da lista, ela pode ser salva utilizando o botão 'Salvar', ela sera adicionada a 'listas salvas' na lateral direita
-Para ver uma lista salva basta clicar eno nome da lista e ela ira abrir os itens na tela principal de atividades, caso faça alguma alteração e salve
+Para ver uma lista salva basta clicar no nome da lista e ela ira abrir os itens na tela principal de atividades, caso faça alguma alteração e salve
 uma cópia será salva mantendo as duas
-Caso queira deletar uma lista clique na lixeira na lateral da lista, após clicar o nome das lista serão reorganizadas em ordem numérica
+Caso queira deletar uma lista clique na lixeira na lateral da lista, após deletar uma lista nome das lista restantes serão reorganizadas em ordem numérica
 
 ```
 
