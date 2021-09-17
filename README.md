@@ -53,7 +53,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="#">
         <img src="https://pt.gravatar.com/avatar/f0a681d3c89a0d7051ad5519d053b9e3" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
         <sub>
-          <b>Iuri Silva</b>
+          <b>Vitor dos Santos Pedra</b>
         </sub>
       </a>
     </td>
