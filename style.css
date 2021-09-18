@@ -112,7 +112,7 @@ li{
   height: 40px;
   width: 150px;
   border-radius: 6px;
-  box-shadow: 5px 5px 30px 8px gray ;
+  box-shadow: 5px 15px 30px 5px gray ;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -141,4 +141,25 @@ span{
   float: right;
   margin-top: -50px;
   margin-right: 10px;
+}
+
+footer{
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(
+    270deg,
+    rgba(237, 107, 32, 1) 2%,
+    rgba(225, 25, 126, 1) 50%,
+    rgba(57, 40, 146, 1) 97%
+  );
+  position: absolute;
+  bottom: 0;
+}
+footer p{
+  text-decoration: none;
+  margin: 0;
 }
