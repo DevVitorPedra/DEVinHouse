@@ -3,7 +3,7 @@
 
 
 
-<img src="Captura de Tela (23).png" alt="imagem do programa">
+<img src="Captura de Tela (29).png" alt="imagem do programa">
 
 > O DEV To-Do List é uma ferramenta para salvar uma lista de tarefas do dia a dia, podendo salvar varias listas utilizando o localStorage do navegador.
 
